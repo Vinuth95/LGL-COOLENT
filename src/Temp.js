@@ -84,8 +84,8 @@ function Temp() {
           
   <span className='align'>Concentration Master</span>
     <button className='btn' onClick= {() => handleOpenDialog('concentration')}>New </button>
-    <p className='ct'>Min :{concentrationDialogData.min} </p>
-    <p className='ctt'>Max :{concentrationDialogData.max} </p>
+    <p className='ct'>Min:{concentrationDialogData.min} </p>
+    <p className='ctt'>Max:{concentrationDialogData.max} </p>
     <button className='ed' onClick={() => handleEdit('concentration')}>Edit</button>
     <button className='del' onClick={() => handleDelete('concentration')}>Delete</button>
     </CardContent>
@@ -94,8 +94,8 @@ function Temp() {
       <CardContent>
    <span className='align'>PH Master</span>
     <button className='btnn' onClick={() => handleOpenDialog('ph')}>New </button>
-    <p className='ph'>Min :{phDialogData.min}  </p>
-    <p className='phh'>Max :{phDialogData.max} </p>
+    <p className='ph'>Min:{phDialogData.min}  </p>
+    <p className='phh'>Max:{phDialogData.max} </p>
     <button className='edd'  onClick={() => handleEdit('ph')}>Edit</button>
 <button className='dell' onClick={() => handleDelete('ph')}>Delete</button>
     </CardContent>

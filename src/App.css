@@ -1,3 +1,4 @@
+
 body{
 background-color: #f1f5f8;
 }
@@ -10,7 +11,15 @@ h1{
   top: -13px;
   left: 114px;
 }
-#td1{
+@media(max-width:980px){
+.align{
+  position: relative;
+  top: -104px;
+  left: -10px;
+  font-size: 24px;
+}
+}
+ #td1{
   border: 2px solid rgba(0, 0, 0, 0.315);
   padding: 56px;
   font-size: x-large;
@@ -22,6 +31,18 @@ h1{
   left: 137px;
   font-family: arial, sans-serif;
 }
+@media  (max-width:980px){
+  #td1{
+    margin: 0px;
+    border: 1px solid black;
+    position: relative;
+    left: 8px;
+    width: 45%;
+    bottom: 6px;
+    height: 0px;
+    padding: 105px;
+}
+}
 #td2 {
   border: 2px solid rgba(0, 0, 0, 0.315);
   padding: 56px;
@@ -31,9 +52,21 @@ h1{
   height:173px;
   position:relative;
   left: 835px;
-  bottom:286px;
+  bottom:288px;
   font-family: arial, sans-serif;
   background-color:rgb(245, 248, 244);
+}
+@media  (max-width:980px){
+  #td2{
+    margin: 0px;
+    border: 1px solid black;
+    position: relative;
+    left: 8px;
+    width: 45%;
+    bottom: -9px;
+    height: 0px;
+    padding: 105px;
+}
 }
 #td3 {
   border: 2px solid rgba(0, 0, 0, 0.315);
@@ -47,6 +80,19 @@ h1{
   bottom:260px;
   font-family: arial, sans-serif;
   background-color:rgb(245, 248, 244);
+}
+@media  (max-width:980px){
+  #td3{
+    margin: 0px;
+    border: 1px solid black;
+    position: relative;
+    left: 8px;
+    width: 45%;
+    bottom: -20px;
+    height: 0px;
+    padding: 105px;
+}
+
 }
 #td1:hover{
   background-color:#dee2e6;
@@ -71,11 +117,24 @@ h1{
       bottom: -80px;
       left:-369px;
       margin-left: 144px;
-      
-      
-}
+      }
+      @media(max-width:980px){
+        .bt{
+          padding: 7px 15px;
+          border: none;
+          border-radius: 5px;
+          background-color:green;
+          color: white;
+          font-size: 16px;
+          cursor: pointer;
+          position: relative;
+          content: "\002B";
+          position: relative;
+          bottom: 65px;
+          left:-252px;
+          margin-left: 144px;}
+      }
 .btn{
-  
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -89,10 +148,25 @@ h1{
   bottom: -80px;
   left: -369px;
   margin-left: 130px;
-  
-}
+  }
+  @media(max-width:980px){
+    .btn{
+      padding: 7px 15px;
+      border: none;
+      border-radius: 5px;
+      background-color:green;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      position: relative;
+      content: "\002B";
+      position: relative;
+      bottom: 45px;
+      left:-252px;
+      margin-left: 144px;
+
+    }}
 .btnn{
-  
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -106,39 +180,90 @@ h1{
   bottom: -80px;
   left: -367px;
   margin-left: 240px;
-  
-}
+  }
+  @media(max-width:980px){
+    .btnn{
+      padding: 7px 15px;
+      border: none;
+      border-radius: 5px;
+      background-color:green;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      position: relative;
+      content: "\002B";
+      position: relative;
+      bottom: 35px;
+      left:-252px;
+      margin-left: 144px;
+}}
+
 .pt{
   position: relative;
   left:13%;
   top:100px;
 }
+@media(max-width:980px){
+.pt{
+  position: relative;
+  left:-26%;
+  top:-52px;
+}}
 .ptt{
   position: relative;
   left:75%;
   top:50px;
 }
+@media(max-width:980px){
+  .ptt{
+    position: relative;
+    left: 80%;
+    top:-103px;
+  }}
 .ct{
   position: relative;
   left:13%;
   top:100px;
 }
+@media(max-width:980px){
+  .ct{
+    position: relative;
+    left:-26%;
+    top:-52px;
+  }}
 .ctt{
   position: relative;
   left:75%;
   top:50px;
 }
+@media(max-width:980px){
+  .ctt{
+    position: relative;
+    left:80%;
+    top:-103px;
+  }}
 .ph{
   position: relative;
   left:13%;
   bottom:-100px
 }
+@media(max-width:980px){
+  .ph{
+    position: relative;
+    left:-26%;
+    top:-27px;
+  }}
 .phh{
   position: relative;
   left:75%;
   top:50px;
 }
-
+@media(max-width:980px){
+  .phh{
+    position: relative;
+    left:80%;
+    top:-78px;
+  }}
 .dialog {
   background-color:rgb(245, 248, 244);;
   border: 1px solid black;
@@ -150,13 +275,23 @@ h1{
   left: 50%;
   transform: translate(-50%, -50%);
 }
+@media(max-width:980px){.dialog {
+  background-color:rgb(245, 248, 244);;
+  border: 1px solid black;
+  padding: 50px;
+  position: absolute;
+  width:51%;
+  height:40%;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+}
 .bt:focus, .btn:focus, .btnn:focus {
   background-color: green;
   outline: none;
 }
-
 .cls{
-  
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -167,6 +302,20 @@ h1{
   position: relative;
   bottom:-80%;
   left: -37%;
+}
+@media(max-width:980px){
+  .cls{
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color:green;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    position: relative;
+    bottom:-41%;
+    left: -19%;
+  }
 }
 .sb{
   padding: 10px 20px;
@@ -183,6 +332,19 @@ h1{
       left: -69%;
       margin-left: 80px;
 }
+@media(max-width:980px){
+  .sb{
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color:green;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  bottom:-27%;
+  left: -62%;
+}}
 .price-input{
   width:100%;
   display:flex;
@@ -194,33 +356,70 @@ h1{
   height:100%;
   font-size:30px;
 }
+@media(max-width:980px){
+  .field{
+  width:100%;
+  height:100%;
+  font-size:30px;
+  position: relative;
+  left:-38px
+}}
+
 .field1{
   width:100%;
   height:100%;
   font-size:30px;
   position: relative;
-    top: -126px;
-    left: 220px;
+  top: -126px;
+  left: 220px;
 }
-.t{
-  
+@media(max-width:980px){
+  .field1{
+  width:100%;
+  height:100%;
+  font-size:30px;
   position: relative;
-  width: 21%;
+  left:104px;
+  top:-129px;
+}}
+.t{
+  position: relative;
+  width: 15%;
   height: 50%;
   border-radius: 5px;
   padding: 11px;
   margin: 11px;
   font-size: 20px;
 }
-.tt{
-  
+@media(max-width:980px){.t{
   position: relative;
-  width: 21%;
+  width: 15%;
+  height: 50%;
+  border-radius: 5px;
+  padding: 11px;
+  margin: 11px;
+  font-size:18px;
+}}
+.tt{
+  position: relative;
+  width: 15%;
   height: 10%;
   border-radius: 5px;
   padding: 11px;
   margin: 11px;
-  font-size: 21px;
+  font-size: 20px;
+}
+@media(max-width:980px){.tt{
+  position: relative;
+    width: 15%;
+    height: 9%;
+    border-radius: 5px;
+    padding: 11px;
+    margin: 11px;
+    font-size: 18px;
+    left: 0%;
+    bottom: 0%;
+}
 }
 .edit{ 
   padding: 10px 20px;
@@ -233,10 +432,20 @@ h1{
   position: relative;
   bottom:85px;
   left: 45%;
-
 }
+@media(max-width:980px){.edit{ 
+  padding: 7px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color:green;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  bottom:224px;
+  left: 29%;
+}}
 .delete{
-   
   padding: 10px 12px;
   border: none;
   border-radius: 5px;
@@ -248,6 +457,18 @@ h1{
   bottom:85px;
   left: 73%;
 }
+@media(max-width:980px){.delete{
+  padding: 7px 9px;
+  border: none;
+  border-radius: 5px;
+  background-color:#f07c7cda;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  bottom:224px;
+  left: 75%;
+}}
 .ed{ 
   padding: 10px 20px;
   border: none;
@@ -259,11 +480,21 @@ h1{
   position: relative;
   bottom:85px;
   left: 45%;
-
 }
+@media(max-width:980px){.ed{ 
+  padding: 7px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color:green;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  bottom:207px;
+  left: 28%;
+}}
 .del{
-   
-  padding: 10px 12px;
+   padding: 10px 12px;
   border: none;
   border-radius: 5px;
   background-color:#f07c7cda;
@@ -274,6 +505,18 @@ h1{
   bottom:85px;
   left: 73%;
 }
+@media(max-width:980px){
+   .del{padding: 7px 9px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f07c7cda;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    bottom: 207px;
+    left: 75%;
+}}
 .edd{ 
   padding: 10px 20px;
   border: none;
@@ -286,6 +529,19 @@ h1{
   bottom:85px;
   left: 45%;
 }
+@media (max-width: 980px){
+.edd{
+    padding: 7px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    bottom: 197px;
+    left: 28%;
+}}
   .dell{
     padding: 10px 12px;
     border: none;
@@ -297,6 +553,19 @@ h1{
     position: relative;
     bottom:85px;
     left: 73%;}
+    @media (max-width: 980px){
+.dell {
+    padding: 7px 9px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f07c7cda;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    bottom: 197px;
+    left: 75%;
+}}
 
 
 
